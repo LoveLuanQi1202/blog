@@ -264,13 +264,17 @@
     <script>
         var x =document.getElementsByClassName("h-icon")[0];
         var y =document.getElementsByClassName("main")[0];
+        var z =document.getElementsByTagName("body")[0];
         var flag = 0;
         x.addEventListener("click",function(){
             if(flag==0){
                 y.style.transform="translate(200px)";
+                console.log(z);
+                z.style.overflow="hidden";
                 flag =1;
             }else{
                 y.style.transform="";
+                z.style.overflow="";
                 flag=0;
             }
             
