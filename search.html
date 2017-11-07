@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>search</title>
+    <link rel="stylesheet" href="./css/conmom.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <style>
+    
+     header input{
+        height: 25px;
+        width: 76%;
+        outline: 0;
+        border:0px;
+        margin-left: 15px;
+    } 
+    header .search-wrap{
+        height: 25px;
+        width: 75%;
+        background-color: white;
+        border-radius: 15px;
+    }
+    .search-wrap i{
+        float: right;
+        padding: 4px 10px;
+    }
+
+
+    .select{
+        width: 500%;
+        height: 40px;
+        background-color: white;
+        position: relative;
+    }
+    .select ul{
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        font-size: 0;
+    }
+    .select ul li{
+        display: inline-block;
+        width: 20%;
+        height:40px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    
+
+
+
+    @media screen and (max-width:325px){
+        header .search-wrap{
+            width: 65%;
+        }
+        header input{
+            width: 70%;
+        }
+    }
+    @media screen and (min-width:400px){
+        header input{
+            width:82%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <span class="h-icon">
+                <i class="fa fa-arrow-left fa-2x"></i>
+            </span>
+            <div class="search-wrap">
+            <input type="text">
+            <i class="fa fa-search fa-fw"></i>
+            </div>
+        </header>
+        <div class="select">
+            <ul>
+                <li >Vue</li>
+                <li>Ng</li>
+                <li>Node</li>
+                <li>移动端</li>
+                <li>杂谈</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
