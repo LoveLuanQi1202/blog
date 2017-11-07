@@ -1,0 +1,27 @@
+header {
+    height: 45px;
+    width: 100%;
+    background-color: #2d2d2e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+header span {
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.h-icon {
+    width: 48px;
+    padding: 0 10px;
+    height: 33px;
+}
+
+.h-text {
+    font-size: 22px;
+    padding: 0 18px;
+}

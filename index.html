@@ -6,64 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lee</title>
+    <link rel="stylesheet" href="./css/conmom.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/contentlist.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    html,
-    body {
-        width: 100vw;
-        height: 100vh;
-        background-color: #f0f0f2;
-        position: relative;
-        overflow-x: hidden;
-    }
-    .main{
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: #f5f5f5;
-        -webkit-transition: transform .2s  ease-in-out;
-        -moz-transition: transform .2s  ease-in-out;
-        transition: transform .2s  ease-in-out;
-        z-index: 10;
-    }
- 
-    /*header start*/
-    
-    header {
-        height: 45px;
-        width: 100%;
-        background-color: #2d2d2e;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    header span {
-        color: white;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-    }
-
-    .h-icon {
-        width: 48px;
-        padding: 0 10px;
-        height: 33px;
-    }
-
-    .h-text {
-        font-size: 22px;
-        padding: 0 18px;
-    }
     /*userImg start*/
 
     .userImg {
@@ -115,96 +63,9 @@
     }
     /*content start*/
 
-    .content,
-    .content ul {
-        width: 100%
-    }
-
-    .content ul li {
-        width: 100%;
-        background-color: #ffffff;
-        margin-bottom: 10px;
-        position: relative;
-    }
-
-    .content ul li::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: block;
-        border-top: 1px solid #dddddd;
-    }
-
-    .content ul li::after {
-        content: ' ';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: block;
-        border-top: 1px solid #dadada;
-    }
-
-    .c-title {
-        width: 100%;
-        height: 40px;
-        line-height: 30px;
-        display: block;
-        box-sizing: border-box;
-        padding: 10px 15px 0px 15px;
-    }
-
-    .c-content {
-        color: #797979;
-        display: block;
-        padding: 0 12px 10px 15px;
-    }
+    
     /* aside start*/
-    aside{
-        width: 200px;
-        height: 220px;
-        background-color: #f4f4f4;
-        z-index: -10;
-    }
-    aside ul{
-        width: 100%;
-        height: 100%;
-        background-color: #fafafa;
-    }
-    aside ul li{
-        width: 100%;
-        height: 45px;
-        position: relative;
-        background-color: white;
-        display: flex;
-        align-items: center;
-    }
-   
-
-    aside ul li::after {
-        content: ' ';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: block;
-        border-top: 1px solid #dadada;
-    }
-    aside ul li span{
-        font-size: 21px;
-        line-height:45px;
-        display: inline-block;
-        width: 100px;
-    }
-    aside ul li i{
-        padding: 0 20px;
-        height: 26px;
-    }
-    .fa-015x{
-        font-size:1.5em;
-    }
+    
 </style>
 
 <body>
@@ -254,11 +115,11 @@
     </div>
     <aside>
         <ul>
-            <li><i class="fa fa-home fa-015x fa-fw"></i><span>主页</span></li>
-            <li><i class="fa fa-star fa-015x fa-fw"></i><span>博客列表</span></li>
-            <li><i class="fa fa-github-alt fa-015x fa-fw"></i><span>Github</span></li>
-            <li><i class="fa fa-user-circle fa-015x fa-fw"></i><span>电子简历</span></li>
-            <li><i class="fa fa-calendar fa-015x fa-fw"></i><span style="font-size:18px;">2017-10-4</span></li>
+            <li><a class="active"><i class="fa fa-home fa-015x fa-fw"></i><span >主页</span></a></li>
+            <li><a href="./blogList.html"><i class="fa fa-star fa-015x fa-fw"></i><span>博客列表</span></a></li>
+            <li><a><i class="fa fa-github-alt fa-015x fa-fw"></i><span>Github</span></a></li>
+            <li><a><i class="fa fa-user-circle fa-015x fa-fw"></i><span>电子简历</span></a></li>
+            <li><a><i class="fa fa-calendar fa-015x fa-fw"></i><span style="font-size:18px;">2017-10-4</span></a></li>
         </ul>
     </aside>
     <script>
